@@ -1,7 +1,24 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EarthquakeMonitor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Earthquakes_BaseUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://earthquake.usgs.gov/earthquakes/feed/v1.0/</Value>
+    </Setting>
+    <Setting Name="Earthquakes_ResAllMonth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">summary/all_month.geojson</Value>
+    </Setting>
+    <Setting Name="Earthquakes_ResAllHour" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">summary/all_hour.geojson</Value>
+    </Setting>
+    <Setting Name="Earthquakes_PollingIntervalMs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="WorldCities_ZipFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">worldcities.zip</Value>
+    </Setting>
+    <Setting Name="WorldCities_CsvFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">worldcities.csv</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

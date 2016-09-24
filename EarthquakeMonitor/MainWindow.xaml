@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EarthquakeMonitor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Loaded="MainWindow_Loaded"
+        Title="EarthquakeMonitor">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" IsReadOnly="True" Name="dataGrid"
+                  ItemsSource="{Binding}"
+                  VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Auto"
+        />
+
+        <TextBox Grid.Row="1" IsReadOnly="True" Name="logView" VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>

@@ -22,5 +22,59 @@ namespace EarthquakeMonitor.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://earthquake.usgs.gov/earthquakes/feed/v1.0/")]
+        public string Earthquakes_BaseUri {
+            get {
+                return ((string)(this["Earthquakes_BaseUri"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("summary/all_month.geojson")]
+        public string Earthquakes_ResAllMonth {
+            get {
+                return ((string)(this["Earthquakes_ResAllMonth"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("summary/all_hour.geojson")]
+        public string Earthquakes_ResAllHour {
+            get {
+                return ((string)(this["Earthquakes_ResAllHour"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("60000")]
+        public int Earthquakes_PollingIntervalMs {
+            get {
+                return ((int)(this["Earthquakes_PollingIntervalMs"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("worldcities.zip")]
+        public string WorldCities_ZipFile {
+            get {
+                return ((string)(this["WorldCities_ZipFile"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("worldcities.csv")]
+        public string WorldCities_CsvFile {
+            get {
+                return ((string)(this["WorldCities_CsvFile"]));
+            }
+        }
     }
 }

@@ -59,5 +59,15 @@ namespace EarthquakeMonitor.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] worldcities_zip {
+            get {
+                object obj = ResourceManager.GetObject("worldcities_zip", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
